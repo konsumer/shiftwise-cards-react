@@ -14,10 +14,7 @@ module.exports = {
       {
         test: /\.js?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel',
-        query: {
-          presets: ['es2015', 'react']
-        }
+        loader: 'babel'
       },
       { test: /\.css$/, loader: 'style-loader!css-loader!autoprefixer-loader?browsers=last 2 version' },
       { test: /\.png$/, loader: 'url-loader?limit=100000' },
