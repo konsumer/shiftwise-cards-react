@@ -4,11 +4,11 @@
 
 ## dev tools
 
-* Install dependencies and tools with `npm install`. You will need to have [nodejs & npm](https://nodejs.org/) installed.
-* run a development webserver with `npm start`
-* run tests with `npm test`
-* `npm run build` will run the build for static deployment
-* `npm run deploy` will deploy the optimized static static site to github pages.
+*  `npm install` - Install dependencies and tools. You will need to have [nodejs & npm](https://nodejs.org/) installed.
+* `npm start` - run a development webserver
+* `npm test` - run tests
+* `npm run build` - run the build for static deployment
+* `npm run deploy` - deploy the optimized static static site to github pages.
 
 ## style notes
 
