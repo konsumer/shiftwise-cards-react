@@ -2,6 +2,8 @@
 
 [Here](http://konsumer.github.io/shiftwise-cards-react/) is a running example of this code.
 
+[![Build Status](https://travis-ci.org/konsumer/shiftwise-cards-react.svg?branch=master)](https://travis-ci.org/konsumer/shiftwise-cards-react)
+
 ## dev tools
 
 *  `npm install` - Install dependencies and tools. You will need to have [nodejs & npm](https://nodejs.org/) installed.
