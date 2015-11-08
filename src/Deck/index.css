@@ -1,0 +1,12 @@
+.Deck.stacked > .cards > .Card {
+  margin-left: -50px;
+}
+
+.Deck.stacked > .cards {
+  margin-left: 50px;
+}
+
+.Deck > .cards > .Card.row {
+  content: '';
+  clear:both;
+}

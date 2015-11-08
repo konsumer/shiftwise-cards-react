@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+  background: #030;
+  color: #fff;
+  max-width: 1040px;
+  margin:auto;
+}
+
+h1 {
+  font-weight:normal;
+}
+
+a {
+  color: inherit;
+}
