@@ -1,6 +1,10 @@
+/* global __WEBPACK__ */
+
 import React from 'react'
 
-import './index.css'
+if (__WEBPACK__) {
+  require('./index.css')
+}
 
 export default class Card extends React.Component {
   constructor (props) {

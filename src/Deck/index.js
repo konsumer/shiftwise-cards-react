@@ -1,7 +1,12 @@
+/* global __WEBPACK__ */
+
 import React from 'react'
 
+if (__WEBPACK__) {
+  require('./index.css')
+}
+
 import Card from '../Card'
-import './index.css'
 
 export default class Deck extends React.Component {
   constructor (props) {

@@ -1,4 +1,6 @@
 var path = require('path')
+var webpack = require('webpack')
+
 module.exports = {
   entry: {
     app: ['./src/index.js']
@@ -22,5 +24,12 @@ module.exports = {
       { test: /\.jpg$/, loader: 'file-loader' }
     ]
   },
-  plugins: []
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.strngify(process.env.NODE_ENV)
+      },
+      '__WEBPACK__': true
+    })
+  ]
 }
