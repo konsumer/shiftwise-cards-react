@@ -16,13 +16,12 @@ export default class Card extends React.Component {
 
   // pure function: return the suit character for this card
   suit () {
-    return ('♠♣♥♦')[this.state.val % 4]
+    return ('qwre')[this.state.val % 4] // spades, clubs, hearts, diamonds
   }
 
   // pure function: return the symbol (A-K)
   symbol () {
-    let n = ('A234567890JQK')[Math.floor(this.state.val / 4)]
-    return n === '0' ? '10' : n
+    return ('1234567890asd')[Math.floor(this.state.val / 4)]
   }
 
   // pure function: return the color of this card
@@ -33,18 +32,18 @@ export default class Card extends React.Component {
   render () {
     const val = this.symbol()
     const suit = this.suit()
-    var c = this.color()
+    var c = `v${val} s${suit}`
     if (this.props.className) {
-      c = c + ' ' + this.props.className
+      c = `${c} ${this.props.className}`
     }
     return (<div className={`Card ${c}`}>
       <div className='top'>
-        <span className='n'>{val}</span>
-        <span className='s'>{suit}</span>
+        <span className='val'>{val}</span>
+        <span className='suit'>{suit}</span>
       </div>
       <div className='bottom'>
-        <span className='n'>{val}</span>
-        <span className='s'>{suit}</span>
+        <span className='val'>{val}</span>
+        <span className='suit'>{suit}</span>
       </div>
     </div>)
   }

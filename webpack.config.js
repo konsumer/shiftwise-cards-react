@@ -17,8 +17,7 @@ module.exports = {
         loader: 'babel'
       },
       { test: /\.css$/, loader: 'style-loader!css-loader!autoprefixer-loader?browsers=last 2 version' },
-      { test: /\.png$/, loader: 'url-loader?limit=100000' },
-      { test: /\.jpg$/, loader: 'file-loader' }
+      { test: /\.woff|\.woff2|\.ttf|\.eot|\.svg$/, loader: 'url-loader?limit=100000' }
     ]
   },
   plugins: [

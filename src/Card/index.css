@@ -1,9 +1,9 @@
 .Card {
   border: 1px solid #000;
-  width: 65px;
+  width: 45px;
   height: 100px;
   margin: 2px;
-  padding: 5px 0;
+  padding: 5px 15px;
   position:relative;
   background: #fff;
   color: #000;
@@ -11,25 +11,117 @@
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
   display:block;
   float:left;
+  font-family: "hoyle_playing_cardsregular";
+  font-size: 20px;
 }
 
-.Card.red  {
+/* hearts & diamonds */
+.Card.sr,
+.Card.se  {
   color:red;
 }
 
 .Card > .bottom {
   position:absolute;
   bottom: 5px;
-  right: 0;
+  right: 15px;
   transform: rotate(180deg);
 }
 
 .Card > .top, .Card > .bottom {
   display:inline-block;
-  width:2em;
-  text-align: center;
 }
 
-.Card > div > .s {
+.Card > div > .suit {
   display:block;
+  font-size: 30px;
+}
+
+/* graphics for face cards */
+.Card.va:after,
+.Card.vs:after,
+.Card.vd:after {
+  font-size: 85px;
+  line-height: 23px;
+  width: 55px;
+  text-align:center;
+  display:block;
+}
+
+/* king of spades */
+.Card.vd.sq:after {
+  content: '#';
+}
+
+/* king of clubs */
+.Card.vd.sw:after {
+  content: '#';
+}
+
+/* king of hearts */
+.Card.vd.sr:after {
+  content: '$';
+}
+
+/* king of diamonds */
+.Card.vd.se:after {
+  content: '#';
+}
+
+
+/* queen of spades */
+.Card.vs.sq:after {
+  content: '@';
+}
+
+/* queen of clubs */
+.Card.vs.sw:after {
+  content: '!';
+}
+
+/* queen of hearts */
+.Card.vs.sr:after {
+  content: '@';
+}
+
+/* queen of diamonds */
+.Card.vs.se:after {
+  content: '!';
+}
+
+
+/* jack of spades */
+.Card.va.sq:after {
+  content: 'v';
+}
+
+/* jack of clubs */
+.Card.va.sw:after {
+  content: 'c';
+}
+
+/* jack of hearts */
+.Card.va.sr:after {
+  content: 'v';
+}
+
+/* jack of diamonds */
+.Card.va.se:after {
+  content: 'c';
+}
+
+/* fixes for specific glyphs */
+
+/* make diamonds bigger */
+.Card.se > div > .suit {
+  display:block;
+  font-size: 40px;
+}
+
+/* 10, 8, Q, K are aligned wrong */
+.Card.v0 > div > .val,
+.Card.v8 > div > .val,
+.Card.vs > div > .val,
+.Card.vd > div > .val {
+  margin-left: -4px;
 }
