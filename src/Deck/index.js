@@ -13,13 +13,13 @@ export default class Deck extends React.Component {
     super(props)
 
     this.state = {
-      'deck': [],
+      'deck': new Array(52),
       'columns': 0,
       'stacked': true
     }
 
     for (let i = 52; i--; i) {
-      this.state.deck.push(i)
+      this.state.deck[i] = i | 0
     }
 
     // no-state shuffle
