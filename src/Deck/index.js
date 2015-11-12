@@ -19,7 +19,7 @@ export default class Deck extends React.Component {
     }
 
     for (let i = 52; i--; i) {
-      this.state.deck[i] = i | 0
+      this.state.deck[i] = i
     }
 
     // no-state shuffle
