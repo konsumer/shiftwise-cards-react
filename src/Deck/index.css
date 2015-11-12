@@ -2,6 +2,10 @@
   margin-left: -50px;
 }
 
+.Deck > .cards {
+  transition: margin 0.5s ease-in-out;
+}
+
 .Deck.stacked > .cards {
   margin-left: 50px;
 }
