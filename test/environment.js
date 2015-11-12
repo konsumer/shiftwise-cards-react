@@ -5,7 +5,7 @@ import {jsdom} from 'jsdom'
 global.__WEBPACK__ = false // eslint-disable-line no-underscore-dangle
 
 // init jsdom
-global.document = jsdom('<html><body><div id="app"></div></body></html>')
+global.document = jsdom('<html><body></body></html>')
 global.window = global.document.defaultView
 global.navigator = global.window.navigator
 
