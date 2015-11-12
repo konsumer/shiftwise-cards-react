@@ -21,7 +21,7 @@ export default class Card extends React.Component {
 
   // pure function: return the symbol (A-K)
   symbol () {
-    let n = ('A234567890JQK')[Math.floor(this.state.val / 4)]
+    let n = ('A234567890JQK')[(this.state.val / 4) | 0]
     return n === '0' ? '10' : n
   }
 
