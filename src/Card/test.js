@@ -2,7 +2,7 @@ import test from 'tape'
 import React from 'react'
 import TestUtils from 'react-addons-test-utils'
 
-import Card from '../src/Card'
+import Card from './index'
 
 const expected = [
   ['♠', 'A'],
